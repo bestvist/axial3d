@@ -41,8 +41,10 @@ export default class Axial3d {
             const offer_w = this.rate_w * pageX;
             const offer_h = this.rate_h * pageY;
 
-            $img.style.left = field_width / 2 - offer_w + img.left + 'px';
-            $img.style.top = field_height / 2 - offer_h + img.top + 'px';
+            // $img.style.left = field_width / 2 - offer_w + img.left + 'px';
+            // $img.style.top = field_height / 2 - offer_h + img.top + 'px';
+
+            $img.style['transform'] = `rotatey(${offer_w}deg)`;
         });
     }
 }
