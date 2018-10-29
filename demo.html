@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轴动效果 - 类似Github 404</title>
+
+    <style>
+        #axial3d {
+            width: 800px;
+            height: 800px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./dist/index.js"></script>
+
+    <div id="axial3d"></div>
+
+    <script>
+        (function () {
+            const options = {
+                selector: '#axial3d',
+                imgs: [
+                    './public/images/1.png',
+                    './public/images/2.png',
+                    './public/images/3.png',
+                    './public/images/4.png'
+                ]
+            }
+            const effect = new Axial3d(options)
+        })()
+    </script>
+</body>
+
+</html>
