@@ -31,7 +31,7 @@ or
             var options = {
                 selector: '#axial3d',
                 imgs: [
-                    {src: 'https://bestvist.github.io/axial3d/public/demo1/1.png', left: '50px', top: '10px'},
+                    {src: 'https://bestvist.github.io/axial3d/public/demo1/bg.png', left: '50px', top: '10px'},
                     {src: 'https://bestvist.github.io/axial3d/public/demo1/2.png', left: '150px', top: '10px', static: true},
                     {src: 'https://bestvist.github.io/axial3d/public/demo1/3.png', left: '50px', top: '300px', static: true},
                     {src: 'https://bestvist.github.io/axial3d/public/demo1/4.png', left: '300px', top: '300px', static: true}
