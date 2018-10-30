@@ -44,7 +44,7 @@ or
 </html>
 ```
 
-![](https://github.com/bestvist/axial3d/public/github404.gif)
+![](https://bestvist.github.io/axial3d/public/github404.gif)
 
 ## 属性 Props
 
