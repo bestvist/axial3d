@@ -31,10 +31,10 @@ or
             var options = {
                 selector: '#axial3d',
                 imgs: [
-                    {src: 'https://bestvist.github.io/axial3d/public/images/1.png', left: '50px', top: '10px'},
-                    {src: 'https://bestvist.github.io/axial3d/public/images/2.png', left: '150px', top: '10px', static: true},
-                    {src: 'https://bestvist.github.io/axial3d/public/images/3.png', left: '50px', top: '300px', static: true},
-                    {src: 'https://bestvist.github.io/axial3d/public/images/4.png', left: '300px', top: '300px', static: true}
+                    {src: 'https://bestvist.github.io/axial3d/public/demo1/1.png', left: '50px', top: '10px'},
+                    {src: 'https://bestvist.github.io/axial3d/public/demo1/2.png', left: '150px', top: '10px', static: true},
+                    {src: 'https://bestvist.github.io/axial3d/public/demo1/3.png', left: '50px', top: '300px', static: true},
+                    {src: 'https://bestvist.github.io/axial3d/public/demo1/4.png', left: '300px', top: '300px', static: true}
                 ]
             }
             var effect = new Axial3d(options);
