@@ -5,7 +5,7 @@ module.exports = {
     mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'axial.min.js'
+        filename: 'axial3d.min.js'
     },
     module: {
         rules: [
