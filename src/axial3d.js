@@ -22,16 +22,20 @@ export default class Axial3d {
     }
 
     render() {
+        if(!this.options.imgs){
+            throw Error('axial3d options missing imgs attributes!');
+        }
+
         this.$el.style = 'position:relative;perspective: 800px;';
         this.options.imgs.forEach((img, index) => {
             const $imgs = document.createElement('img');
             $imgs.id = `axial3d-${index}`;
             $imgs.src = img.src;
             $imgs.style.position = 'absolute';
+            $imgs.style['transform'] = 'rotatey(0deg)';
             ['left', 'top', 'right', 'bottom'].forEach(d => {
                 $imgs.style[d] = img[d];
             });
-            $imgs.style['transform'] = 'rotatey(-3deg)'
             this.$el.appendChild($imgs);
         });
     }

@@ -1,8 +1,8 @@
 {
   "name": "axial3d",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "3D effect page like github404",
-  "main": "index.js",
+  "main": "dist/axial.min.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack --w",
