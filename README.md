@@ -46,13 +46,15 @@ or
 
 ## 属性 Props
 
-`options`
+### options
+
 | 属性 | 描述 | 类型 | 可选值 | 默认 |
 |-|-|-|-|-|
 | selector | 元素选择器 | String | - | - |
 | imgs | 图片组 | Array | - | - |
 
-`imgs options`
+### imgs options
+
 | 属性 | 描述 | 类型 | 可选值 | 默认 |
 |-|-|-|-|-|
 | src | 图像路径 | String | - | - |
