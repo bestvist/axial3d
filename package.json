@@ -1,6 +1,6 @@
 {
   "name": "axial3d",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "3D effect page like github404",
   "main": "dist/axial3d.min.js",
   "scripts": {

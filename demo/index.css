@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+code {
+    display: block;
+    padding: 8px 15px;
+    background-color: #f6f8fa;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    overflow-x: auto;
+    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    color: #333;
+    font-size: 12px;
+}
+
+p,
+ul,
+ol,
+table,
+pre,
+dl {
+    margin: 0 0 20px;
+}
+
+h1 {
+    color: #555555;
+    font-size: 60px;
+    text-align: center
+}
+
+h3 {
+    font-size: 36px;
+    color: #494949;
+    line-height: 1.1;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+#app {
+    margin: 20px;
+}
+
+.container {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.panel {
+    text-align: center;
+}

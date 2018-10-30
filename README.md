@@ -16,7 +16,7 @@ or
 ```
 
 ## 例子 Example
-[Demo](https://bestvist.github.io/axial3d/demo.html)
+[Demo](https://bestvist.github.io/axial3d/demo/)
 
 ```
 <html>
@@ -48,14 +48,16 @@ or
 
 ### options
 
-| 属性 | 描述 | 类型 | 可选值 | 默认 |
+| 属性 | 说明 | 类型 | 可选值 | 默认值 |
 |-|-|-|-|-|
 | selector | 元素选择器 | String | - | - |
 | imgs | 图片组 | Array | - | - |
+| transform | 动画形式 | String | translate / rotate | translate |
+| swing | 动画幅度 | Number | - | 5 |
 
 ### imgs options
 
-| 属性 | 描述 | 类型 | 可选值 | 默认 |
+| 属性 | 说明 | 类型 | 可选值 | 默认值 |
 |-|-|-|-|-|
 | src | 图像路径 | String | - | - |
 | top | 图片顶部定位 | String | - | - |
@@ -63,6 +65,12 @@ or
 | left | 图片左侧定位 | String | - | - |
 | right | 图片右侧定位 | String | - | - |
 | static | 图片是否静态，不随鼠标转动 | Boolean | true / false | false |
+
+## 方法 Methods
+
+| 事件名称 | 说明 | 回调参数 |
+|-|-|-|
+| destory | 取消事件监听 | - |
 
 
 ## License
