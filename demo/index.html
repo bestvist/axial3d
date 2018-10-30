@@ -31,9 +31,21 @@
                 <div id="axial3d-github" style="min-height: 500px"></div>
 
                 <pre>
-                    <code>
-                        
-                    </code>
+<code>
+var option1 = {
+    selector: '#axial3d-github',
+    imgs: [
+        { src: 'https://bestvist.github.io/axial3d/public/github/bg.png', left: '0', top: '0' },
+        { src: 'https://bestvist.github.io/axial3d/public/github/house1.png', left: '480px', top: '70px', zIndex: 1 },
+        { src: 'https://bestvist.github.io/axial3d/public/github/house2.png', left: '790px',top: '120px', zIndex: 1 },
+        { src: 'https://bestvist.github.io/axial3d/public/github/ship-shadow.png', left: '440px', top: '250px', zIndex: 2 },
+        { src: 'https://bestvist.github.io/axial3d/public/github/ship.png', left: '430px', top: '140px', zIndex: 2 },
+        { src: 'https://bestvist.github.io/axial3d/public/github/cat-shadow.png', left: '360px', top: '290px', zIndex: 3 },
+        { src: 'https://bestvist.github.io/axial3d/public/github/cat.png', left: '350px', top: '90px', zIndex: 3 },
+    ]
+}
+var effect1 = new Axial3d(option1);
+</code>
                 </pre>
             </div>
             <h3>旋转变换</h3>
@@ -41,19 +53,39 @@
                 <div id="axial3d-demo1" style="min-height: 600px"></div>
 
                 <pre>
-                    <code>
-                        
-                    </code>
+<code>
+var option2 = {
+    selector: '#axial3d-demo1',
+    transform: 'rotate',
+    imgs: [
+        { src: 'https://bestvist.github.io/axial3d/public/demo1/bg.png', left: '50px', top: '10px' },
+        { src: 'https://bestvist.github.io/axial3d/public/demo1/2.png', left: '150px', top: '10px', static: true },
+        { src: 'https://bestvist.github.io/axial3d/public/demo1/3.png', left: '50px', top: '300px', static: true },
+        { src: 'https://bestvist.github.io/axial3d/public/demo1/4.png', left: '300px', top: '300px', static: true }
+    ]
+}
+var effect2 = new Axial3d(option2);
+</code>
                 </pre>
             </div>
             <h3>不同幅度</h3>
             <div class="panel">
-                <div id="axial3d-demo2" style="min-height: 600px"></div>
+                <div id="axial3d-demo2" style="min-height: 400px"></div>
 
                 <pre>
-                    <code>
-                        
-                    </code>
+<code>
+var option3 = {
+    selector: '#axial3d-demo2',
+    swing: 20,
+    imgs: [
+        { src: 'https://bestvist.github.io/axial3d/public/demo2/bg.png', left: '50px', top: '10px', static: true },
+        { src: 'https://bestvist.github.io/axial3d/public/demo2/1.png', left: '100px', top: '200px' },
+        { src: 'https://bestvist.github.io/axial3d/public/demo2/2.png', left: '650px', top: '200px' },
+        { src: 'https://bestvist.github.io/axial3d/public/demo2/3.png', left: '300px', top: '10px' }
+    ]
+}
+var effect3 = new Axial3d(option3);
+</code>
                 </pre>
             </div>
         </div>
@@ -66,12 +98,12 @@
                 selector: '#axial3d-github',
                 imgs: [
                     { src: 'https://bestvist.github.io/axial3d/public/github/bg.png', left: '0', top: '0' },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/house1.png', left: '480px', top: '70px', zIndex: 4 },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/house2.png', left: '790px',top: '120px', zIndex: 4 },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/ship-shadow.png', left: '440px', top: '250px', zIndex: 6 },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/ship.png', left: '430px', top: '140px', zIndex: 6 },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/cat-shadow.png', left: '360px', top: '290px', zIndex: 8 },
-                    { src: 'https://bestvist.github.io/axial3d/public/github/cat.png', left: '350px', top: '90px', zIndex: 8 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/house1.png', left: '480px', top: '70px', zIndex: 1 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/house2.png', left: '790px',top: '120px', zIndex: 1 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/ship-shadow.png', left: '440px', top: '250px', zIndex: 2 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/ship.png', left: '430px', top: '140px', zIndex: 2 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/cat-shadow.png', left: '360px', top: '290px', zIndex: 3 },
+                    { src: 'https://bestvist.github.io/axial3d/public/github/cat.png', left: '350px', top: '90px', zIndex: 3 },
                 ]
             }
             var effect1 = new Axial3d(option1);
@@ -90,10 +122,10 @@
 
             var option3 = {
                 selector: '#axial3d-demo2',
-                swing: 10,
+                swing: 20,
                 imgs: [
                     { src: 'https://bestvist.github.io/axial3d/public/demo2/bg.png', left: '50px', top: '10px', static: true },
-                    { src: 'https://bestvist.github.io/axial3d/public/demo2/1.png', left: '100px', top: '400px' },
+                    { src: 'https://bestvist.github.io/axial3d/public/demo2/1.png', left: '100px', top: '200px' },
                     { src: 'https://bestvist.github.io/axial3d/public/demo2/2.png', left: '650px', top: '200px' },
                     { src: 'https://bestvist.github.io/axial3d/public/demo2/3.png', left: '300px', top: '10px' }
                 ]

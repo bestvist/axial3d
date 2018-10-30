@@ -9,9 +9,10 @@ code {
     border-radius: 5px;
     border: 1px solid #e5e5e5;
     overflow-x: auto;
-    font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+    /* font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal; */
     color: #333;
-    font-size: 12px;
+    font-size: 14px;
+    text-align: left;
 }
 
 p,
