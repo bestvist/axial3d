@@ -9,15 +9,7 @@
 
     <style>
         #axial3d {
-            position: relative;
-            width: 500px;
-            height: 500px;
             margin: auto;
-            perspective: 800px;
-        }
-
-        #axial3d img{
-            position: absolute;
         }
     </style>
 </head>
@@ -29,16 +21,16 @@
 
     <script>
         (function () {
-            const options = {
+            var options = {
                 selector: '#axial3d',
                 imgs: [
-                    {src: './public/images/1.png',left: '10px',top: '10px'},
-                    {src:'./public/images/2.png',left: '150px',top: '10px'},
-                    {src:'./public/images/3.png',left: '50px',bottom: '10px'},
-                    {src:'./public/images/4.png',left: '300px',bottom: '10px'}
+                    {src: './public/images/1.png',left: '50px',top: '10px'},
+                    {src:'./public/images/2.png',left: '150px',top: '10px',static: true},
+                    {src:'./public/images/3.png',left: '50px',top: '300px',static: true},
+                    {src:'./public/images/4.png',left: '300px',top: '300px',static: true}
                 ]
             }
-            const effect = new Axial3d(options)
+            var effect = new Axial3d(options);
         })()
     </script>
 </body>

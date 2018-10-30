@@ -2,29 +2,32 @@ export default class Axial3d {
     constructor(options) {
         this.options = options || {};
         this.$el = document.querySelector(options.selector);
-        this.rate_w = 0;
-        this.rate_h = 0;
+        this.point = {};
+        this.rate = 0.02;
+        this.setPosition();
         this.render();
-        document.body.onmousemove = (e) => {
-            this.picMove(e.pageX, e.pageY);
+
+        this.moveFunc = this.move.bind(this);
+        document.addEventListener('mousemove', this.moveFunc);
+    }
+
+    setPosition(){
+        const rect = this.$el.getBoundingClientRect();
+        const x = (rect.right - rect.left) / 2;
+        const y = (rect.bottom - rect.top) / 2;
+        this.point = {
+            x: x,
+            y: y
         }
     }
 
     render() {
-        const window_width = document.body.clientWidth;
-        const window_height = document.body.clientHeight;
-        const field_width = this.$el.offsetWidth;
-        const field_height = this.$el.offsetHeight;
-
-        this.rate_w = field_width / window_width;
-        this.rate_h = field_height / window_height;
-
-
+        this.$el.style = 'position:relative;perspective: 800px;';
         this.options.imgs.forEach((img, index) => {
             const $imgs = document.createElement('img');
-
             $imgs.id = `axial3d-${index}`;
             $imgs.src = img.src;
+            $imgs.style.position = 'absolute';
             ['left', 'top', 'right', 'bottom'].forEach(d => {
                 $imgs.style[d] = img[d];
             });
@@ -33,18 +36,20 @@ export default class Axial3d {
         });
     }
 
-    picMove(pageX, pageY) {
+    move(e) {
+        const {pageX, pageY} = e;
         this.options.imgs.forEach((img, index) => {
+            if(img.static) return;
+
             const $img = document.querySelector("#axial3d-" + index);
-            const field_width = this.$el.offsetWidth;
-            const field_height = this.$el.offsetHeight;
-            const offer_w = this.rate_w * pageX;
-            const offer_h = this.rate_h * pageY;
+            const rotatex = (pageX - this.point.x) * this.rate;
+            const rotatey = (pageY - this.point.y) * this.rate;
 
-            // $img.style.left = field_width / 2 - offer_w + img.left + 'px';
-            // $img.style.top = field_height / 2 - offer_h + img.top + 'px';
-
-            $img.style['transform'] = `rotatey(${offer_w}deg)`;
+            $img.style['transform'] = `rotatey(${rotatex}deg) rotatex(${rotatey}deg)`;
         });
+    }
+
+    destory(){
+        document.removeEventListener('mousemove', this.moveFunc);
     }
 }
