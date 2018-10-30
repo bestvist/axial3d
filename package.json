@@ -1,6 +1,6 @@
 {
   "name": "axial3d",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "3D effect page like github404",
   "main": "dist/axial3d.min.js",
   "scripts": {
@@ -21,6 +21,10 @@
   ],
   "author": "bestvist",
   "license": "MIT",
+  "files":[
+    "dist",
+    "src"
+  ],
   "bugs": {
     "url": "https://github.com/bestvist/axial-3d/issues"
   },
