@@ -54,11 +54,13 @@ export default class Axial3d {
             const rotatex = (pageX - this.point.x) * this.swing / 1000 * (img.zIndex || 1);
             const rotatey = (pageY - this.point.y) * this.swing / 1000 * (img.zIndex || 1);
 
+            let transform = '';
             if (this.transform === 'translate') {
-                $img.style['transform'] = `translate3d(${rotatex}px,${rotatey}px,0px)`;
+                transform = `translate3d(${rotatex}px,${rotatey}px,0px)`;
             } else if (this.transform === 'rotate') {
-                $img.style['transform'] = `rotatey(${rotatex}deg) rotatex(${rotatey}deg)`;
+                transform = `rotatey(${rotatex}deg) rotatex(${rotatey}deg)`;
             }
+            $img.style['transform'] = transform;
         });
     }
 
