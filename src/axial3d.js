@@ -30,6 +30,7 @@ export default class Axial3d {
         this.$el.style['position'] = 'relative';
         this.$el.style['perspective'] = '800px';
 
+        const $frag = document.createDocumentFragment();
         this.options.imgs.forEach(img => {
             img.id = 'axial3d-' + Math.floor(+new Date() * Math.random());
             const $imgs = document.createElement('img');
@@ -39,8 +40,9 @@ export default class Axial3d {
             ['left', 'top', 'right', 'bottom', 'zIndex'].forEach(d => {
                 $imgs.style[d] = img[d];
             });
-            this.$el.appendChild($imgs);
+            $frag.appendChild($imgs);
         });
+        this.$el.appendChild($frag);
     }
 
     move(e) {
