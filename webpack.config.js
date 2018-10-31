@@ -1,11 +1,15 @@
 const path = require('path');
 
+const libName = 'axial3d';
+
 module.exports = {
     entry: './src/index.js',
     mode: 'production',
     output: {
+        libraryTarget: 'umd',
+        library: libName,
         path: path.resolve(__dirname, 'dist'),
-        filename: 'axial3d.min.js'
+        filename: libName + '.min.js'
     },
     module: {
         rules: [
